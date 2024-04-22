@@ -24,3 +24,7 @@ RabbitMQ remains 1.
 
 ### Running at least three subscribers
 ![img_1.png](img_1.png) <br>
+In this case, the messages are being processed in parallel by the subscribers, so each subscriber handles a portion of
+the messages. This parallel processing reduces the time it takes to process all the messages compared to having only one 
+subscriber. As a result, the spike in the message queue is reduced quicker because the messages are being consumed more 
+efficiently.
