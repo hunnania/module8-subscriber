@@ -17,9 +17,9 @@
 
 ### Simulation slow subscriber
 ![img.png](img.png) <br>
-My total number of queue is 1.0. As you keep running the publisher (cargo run), it keeps sending messages to the queue, 
+My total number of queue is 1.0. As we keep running the publisher (cargo run), it keeps sending messages to the queue, 
 but the slow subscriber cannot process them as quickly as they are being sent. This causes the messages to queue up in 
-the single queue used by the subscriber. Since your subscriber is using only one queue, the total number of queues in 
+the single queue used by the subscriber. Since my subscriber is using only one queue, the total number of queues in 
 RabbitMQ remains 1.
 
 ### Running at least three subscribers
